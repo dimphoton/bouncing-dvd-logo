@@ -12,7 +12,7 @@ let dvd = {
     img: new Image()
 };
 
-(function main(){
+function main(){
     canvas = document.getElementById("tv-screen");
     ctx = canvas.getContext("2d");
     dvd.img.src = 'https://github.com/dimphoton/bouncing-dvd-logo/raw/master/dvd-logo.png';
@@ -23,7 +23,7 @@ let dvd = {
 
     pickColor();
     update();
-})();
+}
 
 function update() {
     setTimeout(() => {
